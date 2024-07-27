@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agende seu Serviço</h1>
+    </header>
+    <main>
+        <form id="appointment-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Serviço:</label>
+            <select id="service" name="service" required>
+                <option value="lash-lifting">Lash Lifting</option>
+                <option value="brow-lamination">Brow Lamination</option>
+                <option value="henna-design">Design com Henna</option>
+                <option value="shadow-micropigmentation">Micropigmentação Shadow</option>
+            </select>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+        <section id="appointments">
+            <h2>Agendamentos</h2>
+            <ul id="appointment-list"></ul>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
